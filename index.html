@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fff6fa">
+<title>K-POP UNIVERSE — My Fan Journal</title>
+<style>
+:root{--bg:#fff8fb;--paper:#fffdfd;--ink:#49394f;--muted:#8c7d91;--pink:#efb5d0;--pink2:#ffe4ef;--lav:#e9ddff;--purple:#9674ca;--mint:#d9f3e9;--blue:#dceeff;--yellow:#fff0bd;--line:#f0e4ee;--shadow:0 8px 24px #8c5e8b12;--radius:22px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 8% 0%,#fff0f7 0,transparent 28rem),radial-gradient(circle at 100% 20%,#f0eaff 0,transparent 28rem),var(--bg);color:var(--ink);font-family:ui-rounded,"SF Pro Rounded","PingFang TC","Microsoft JhengHei",system-ui,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #c4a4ef;outline-offset:2px}.app{max-width:1160px;margin:auto;padding:16px 16px 100px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:4px 0 20px}.brand{display:flex;align-items:center;gap:10px}.logo{width:44px;height:44px;display:grid;place-items:center;border-radius:16px;background:linear-gradient(135deg,#ffd9e9,#ded2ff);font-size:23px;box-shadow:var(--shadow)}.brand h1{font-size:17px;letter-spacing:.5px;margin:0}.brand p{margin:3px 0 0;font-size:10px;letter-spacing:2px;color:var(--muted)}.topstats{display:flex;gap:7px;align-items:center}.pill{background:#fff;border:1px solid var(--line);padding:8px 10px;border-radius:999px;font-size:12px;font-weight:800;white-space:nowrap}.hero{border-radius:28px;padding:22px;position:relative;overflow:hidden;background:linear-gradient(120deg,#f9e4f0,#eee5ff 60%,#e3f6f0);box-shadow:var(--shadow);margin-bottom:16px}.hero:after{content:"✦";position:absolute;right:20px;top:7px;font-size:78px;color:#fff9;transform:rotate(15deg)}.eyebrow{font-size:11px;letter-spacing:1.8px;font-weight:900;color:#8865b0}.hero h2{font-size:clamp(25px,6vw,38px);line-height:1.12;margin:8px 0 10px;max-width:550px}.hero p{margin:0;max-width:520px;line-height:1.6;color:#71627d;font-size:14px}.hero-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;position:relative;z-index:1}.btn{padding:11px 15px;border-radius:14px;background:#fff;color:var(--ink);font-weight:800;font-size:13px;box-shadow:0 3px 10px #7f588515;transition:transform .15s}.btn:active{transform:scale(.97)}.btn.primary{background:var(--purple);color:white}.btn.soft{background:var(--pink2);color:#995a7b}.btn.small{padding:8px 11px;font-size:12px}.btn.ghost{background:transparent;border:1px solid var(--line);box-shadow:none}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}.stat{background:#fff;border:1px solid var(--line);border-radius:19px;padding:14px;box-shadow:var(--shadow);min-width:0}.stat .ico{font-size:19px}.stat strong{display:block;font-size:23px;margin:4px 0 1px}.stat span{font-size:11px;color:var(--muted)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:24px 0 12px}.section-head h2{font-size:19px;margin:0}.section-head p{font-size:12px;color:var(--muted);margin:4px 0 0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.panel{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:var(--radius);padding:15px;box-shadow:var(--shadow);min-width:0}.panel h3{font-size:14px;margin:0 0 9px}.muted{color:var(--muted)}.smalltext{font-size:12px;line-height:1.55}.progress{height:8px;background:#f3eaf3;border-radius:99px;overflow:hidden;margin:9px 0}.progress span{height:100%;display:block;background:linear-gradient(90deg,#e9a9cb,#a98be2);border-radius:99px}.task-row{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}.task-row:last-child{border:0}.task-icon{width:38px;height:38px;display:grid;place-items:center;border-radius:13px;background:var(--pink2);font-size:19px;flex-shrink:0}.task-row .task-info{flex:1;min-width:0}.task-row strong{font-size:13px;display:block}.task-row small{font-size:11px;color:var(--muted)}.task-row button{flex-shrink:0}.page{display:none}.page.active{display:block;animation:fade .2s ease}@keyframes fade{from{opacity:.5;transform:translateY(4px)}to{opacity:1;transform:none}}.page-title{margin:12px 0 16px}.page-title h2{margin:0;font-size:25px}.page-title p{margin:5px 0 0;color:var(--muted);font-size:13px}.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.field{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:13px;background:#fff;color:var(--ink);min-width:0}.toolbar .field{flex:1;min-width:130px}.category-tabs{display:flex;gap:7px;overflow:auto;padding:3px 0 10px;scrollbar-width:thin}.tab{flex-shrink:0;padding:9px 12px;border:1px solid var(--line);background:#fff;border-radius:999px;color:var(--muted);font-size:12px;font-weight:800}.tab.active{background:#f0e7ff;color:#7955b0;border-color:#dfd0ff}.collection-summary{display:flex;justify-content:space-between;gap:10px;align-items:center;background:linear-gradient(100deg,#fff0f7,#f2edff);padding:15px;border-radius:18px;margin-bottom:12px}.collection-summary strong{font-size:22px}.collection-summary span{font-size:11px;color:#816a91}.cards-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.collect-card{background:#fff;border:1px solid var(--line);border-radius:19px;overflow:hidden;box-shadow:var(--shadow);min-width:0}.collect-art{min-height:125px;padding:13px;display:flex;flex-direction:column;justify-content:space-between;position:relative;background:linear-gradient(135deg,#ffe4f0,#e8dcff)}.collect-art:after{content:"✦";position:absolute;right:12px;top:7px;font-size:38px;color:#fff9}.collect-art.mint{background:linear-gradient(135deg,#dcf5e9,#dceeff)}.collect-art.blue{background:linear-gradient(135deg,#e1edff,#f7e1f5)}.collect-art.yellow{background:linear-gradient(135deg,#fff1c5,#ffe1eb)}.collect-art .tag{align-self:flex-start;background:#ffffffb8;padding:5px 8px;border-radius:99px;font-size:9px;font-weight:900;letter-spacing:.5px}.collect-art .art-emoji{font-size:38px;align-self:center;z-index:1;filter:drop-shadow(0 3px 2px #8c5e8b18)}.collect-art .rarity{font-size:10px;font-weight:900;letter-spacing:1px;z-index:1}.collect-info{padding:11px}.collect-info h3{font-size:13px;margin:0 0 4px;overflow-wrap:anywhere}.collect-info p{font-size:11px;color:var(--muted);margin:0 0 10px;min-height:17px}.card-actions{display:flex;gap:6px}.card-actions button{flex:1;padding:7px 4px;border-radius:9px;background:#f8f2fa;font-size:11px;font-weight:800;color:var(--ink)}.empty{padding:30px 15px;text-align:center;color:var(--muted);background:#fff;border:1px dashed #e8d8e8;border-radius:18px;grid-column:1/-1}.empty b{display:block;color:var(--ink);margin:8px}.notice{padding:12px 14px;background:#fff8df;border:1px solid #f6e7ad;border-radius:15px;font-size:12px;line-height:1.5;margin:12px 0}.pack-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.pack{border:1px solid var(--line);background:#fff;border-radius:16px;padding:13px;text-align:left;color:var(--ink)}.pack.selected{border:2px solid #ad8bdb;background:#f8f2ff}.pack .pack-emoji{font-size:25px}.pack strong{display:block;font-size:13px;margin:7px 0 4px}.pack small{color:var(--muted);font-size:11px}.rarity-pill{font-size:10px;border-radius:999px;padding:4px 7px;background:#f4efff;color:#8b65bc;font-weight:900}.bottom-nav{position:fixed;z-index:20;left:0;right:0;bottom:0;padding:8px 8px calc(8px + env(safe-area-inset-bottom));background:#fffdf9ed;backdrop-filter:blur(14px);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr);gap:3px}.nav-btn{background:transparent;color:#9b8aa1;border-radius:13px;padding:7px 2px;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:10px;font-weight:800}.nav-btn .nav-ico{font-size:20px}.nav-btn.active{color:#8a5eb6;background:#f3eaff}.modal-backdrop{position:fixed;z-index:50;inset:0;background:#30203865;display:none;align-items:end;justify-content:center;padding:12px}.modal-backdrop.open{display:flex}.modal{background:#fffafc;border-radius:24px 24px 18px 18px;width:min(100%,560px);max-height:88vh;overflow:auto;padding:20px;box-shadow:0 20px 80px #38243f44}.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}.modal-head h2{font-size:19px;margin:0}.close{width:35px;height:35px;border-radius:50%;background:#f7eaf4;font-size:20px;color:var(--ink)}.form-grid{display:grid;grid-template-columns:1fr;gap:11px}.form-label{display:block;font-size:12px;font-weight:800;margin-bottom:5px}.form-actions{display:flex;gap:8px;margin-top:15px}.form-actions button{flex:1}.field-wrap{min-width:0}.toast{position:fixed;z-index:80;left:50%;bottom:90px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#4e3b59;color:white;padding:11px 16px;border-radius:999px;font-size:12px;box-shadow:var(--shadow);transition:.25s;max-width:90%;text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}.company-banner{background:linear-gradient(120deg,#f7e6f0,#e9e0ff);border-radius:22px;padding:17px;margin-bottom:13px}.company-banner h3{margin:0 0 5px}.company-banner p{margin:0;color:#786982;font-size:12px}.gacha-stage{background:radial-gradient(circle at center,#fff 0,#f7eaff 52%,#fce9f3 100%);border:1px solid #ebdcf4;border-radius:24px;padding:25px 15px;text-align:center;margin:13px 0}.gacha-orb{width:125px;height:145px;margin:0 auto 12px;border-radius:22px;background:linear-gradient(135deg,#f8cde1,#d7c8ff);box-shadow:0 12px 25px #a37fc32a;display:grid;place-items:center;font-size:55px;border:5px solid #fff;outline:1px solid #e8d9f5}.gacha-orb.spin{animation:spin .6s ease-in-out 2}@keyframes spin{50%{transform:rotateY(180deg) scale(1.04)}}.gacha-result{max-width:230px;margin:14px auto 0}.gacha-result .collect-art{border-radius:16px;min-height:180px}.diary-item{padding:13px;border:1px solid var(--line);border-radius:16px;background:#fff;margin-bottom:10px}.diary-item h3{margin:0 0 5px;font-size:14px}.diary-item p{white-space:pre-wrap;line-height:1.5;font-size:13px;margin:7px 0}.diary-meta{font-size:11px;color:var(--muted)}.room-stage{background:linear-gradient(160deg,#f9dfea,#e4ddff 60%,#dff4ec);border-radius:25px;min-height:250px;padding:20px;position:relative;overflow:hidden}.room-stage:before{content:"☁️     ✦       ☁️";position:absolute;top:18px;left:12px;right:0;font-size:22px;opacity:.65}.room-shelf{margin-top:50px;background:#ffffffa8;border-radius:18px;padding:15px;display:flex;gap:10px;flex-wrap:wrap;min-height:75px;align-items:center;justify-content:center}.decor{font-size:30px;background:#ffffffb8;border-radius:13px;padding:9px}.profile-card{background:linear-gradient(135deg,#fff0f7,#f0eaff);border-radius:22px;padding:20px;text-align:center}.avatar{width:76px;height:76px;border-radius:25px;background:#fff;display:grid;place-items:center;font-size:38px;margin:0 auto 10px;box-shadow:var(--shadow)}.hidden{display:none!important}.checkline{display:flex;gap:8px;align-items:center;font-size:13px}.checkline input{accent-color:#9b76cc}.footer-note{font-size:11px;color:var(--muted);line-height:1.6;margin:18px 0}.two-col{display:grid;grid-template-columns:1fr;gap:12px}.list-row{display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)}.list-row:last-child{border-bottom:0}.list-row .grow{flex:1}.list-row strong{font-size:13px}.list-row small{display:block;color:var(--muted);font-size:11px;margin-top:3px}
+@media(min-width:720px){.app{padding:24px 28px 40px}.bottom-nav{position:static;border:1px solid var(--line);border-radius:18px;margin:0 0 20px;box-shadow:var(--shadow);grid-template-columns:repeat(5,1fr)}.nav-btn{flex-direction:row;justify-content:center;font-size:12px;padding:12px}.hero{padding:30px}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.cards-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.pack-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.two-col{grid-template-columns:1.1fr .9fr}.modal-backdrop{align-items:center}.modal{border-radius:24px}.form-grid{grid-template-columns:1fr 1fr}.form-grid .full{grid-column:1/-1}.app-shell{display:grid;grid-template-columns:1fr;gap:0}}
+@media(min-width:1000px){.cards-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.hero{padding:36px}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+  <div class="brand"><div class="logo">🎧</div><div><h1>K-POP UNIVERSE</h1><p>MY FAN JOURNAL ✦</p></div></div>
+  <div class="topstats"><span class="pill">⭐ <b id="topCoins">120</b></span><span class="pill">Lv.<b id="topLevel">1</b></span></div>
+</header>
+
+<nav class="bottom-nav" aria-label="主要導覽">
+  <button class="nav-btn active" data-page="home"><span class="nav-ico">🏠</span>首頁</button>
+  <button class="nav-btn" data-page="collection"><span class="nav-ico">🗂️</span>圖鑑</button>
+  <button class="nav-btn" data-page="gacha"><span class="nav-ico">✨</span>抽卡</button>
+  <button class="nav-btn" data-page="diary"><span class="nav-ico">💌</span>日記</button>
+  <button class="nav-btn" data-page="my"><span class="nav-ico">🌷</span>我的</button>
+</nav>
+
+<main>
+<section class="page active" id="page-home">
+  <div class="hero">
+    <div class="eyebrow">YOUR OWN FAN UNIVERSE ✦</div>
+    <h2>把喜歡的事物，<br>收藏成自己的宇宙。</h2>
+    <p>今天也來記錄一點喜歡的事吧！完成任務、收集小卡，慢慢打造專屬的追星手帳。</p>
+    <div class="hero-actions"><button class="btn primary" data-go="collection">🗂️ 開始收集</button><button class="btn" data-go="gacha">✨ 去抽卡</button><button class="btn soft" data-action="starter">🎁 新手福利</button></div>
+  </div>
+  <div class="stats-grid">
+    <div class="stat"><span class="ico">⭐</span><strong id="homeCoins">120</strong><span>Star Coins</span></div>
+    <div class="stat"><span class="ico">🃏</span><strong id="homeCards">0</strong><span>收藏卡</span></div>
+    <div class="stat"><span class="ico">🏆</span><strong id="homeAchievements">0</strong><span>已解鎖成就</span></div>
+  </div>
+  <div class="grid">
+    <div class="panel">
+      <div class="section-head" style="margin-top:0"><div><h2>Today's Quest ✨</h2><p>完成任務，讓宇宙升級</p></div><button class="btn small ghost" data-go="quests">全部任務 →</button></div>
+      <div id="homeTasks"></div>
+    </div>
+    <div class="panel">
+      <div class="section-head" style="margin-top:0"><div><h2>Collection Progress</h2><p>你的收藏成長中</p></div><button class="btn small ghost" data-go="collection">前往圖鑑 →</button></div>
+      <div id="homeProgress"></div>
+    </div>
+    <div class="panel">
+      <div class="section-head" style="margin-top:0"><div><h2>最近的宇宙訊息</h2><p>新手福利、收藏與成就</p></div></div>
+      <div id="homeUpdates" class="smalltext muted">完成第一筆收藏，開始你的追星旅程！</div>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="page-collection">
+  <div class="page-title"><h2>Collection 🗂️</h2><p>把喜歡的團體、歌曲與回憶好好收藏。</p></div>
+  <div class="collection-summary"><div><span>我的有效收藏</span><br><strong id="collectionCount">0</strong> <span>items</span></div><div style="text-align:right"><span>新手收集名額</span><br><strong id="slotsLeft">5</strong> <span>/ 5</span></div></div>
+  <div class="progress"><span id="collectionProgressBar" style="width:0%"></span></div>
+  <div class="toolbar"><button class="btn primary" data-action="open-pack">🎁 選擇資料包</button><button class="btn" data-action="add-item">＋ 自訂新增</button><button class="btn soft" data-action="starter">新手福利</button></div>
+  <div class="category-tabs" id="categoryTabs"></div>
+  <div class="toolbar"><input class="field" id="collectionSearch" placeholder="搜尋收藏名稱、團體或備註…"><select class="field" id="companyFilter" aria-label="經紀公司篩選"><option value="">所有經紀公司</option></select></div>
+  <div id="collectionCards" class="cards-grid"></div>
+  <div class="footer-note">提示：示範資料會清楚標示為「示範資料」。你可以自行編輯內容；刪除收藏不會讓已領取的獎勵再次可領。</div>
+</section>
+
+<section class="page" id="page-gacha">
+  <div class="page-title"><h2>Lucky Station ✨</h2><p>把下一份心動，交給一點點幸運。</p></div>
+  <div class="company-banner"><h3 id="gachaCompanyTitle">🌟 同公司主題抽卡</h3><p id="gachaCompanyDesc">抽卡池依照你的收藏方向顯示可用卡片。</p></div>
+  <div class="panel">
+    <label class="form-label" for="gachaCompany">選擇經紀公司／卡池主題</label>
+    <select class="field" id="gachaCompany"></select>
+    <div class="grid" style="margin-top:13px">
+      <div class="panel" style="background:#fff9fc;box-shadow:none"><span class="rarity-pill">COMMON 60%</span><p class="smalltext muted">普通卡</p></div>
+      <div class="panel" style="background:#fff9fc;box-shadow:none"><span class="rarity-pill" style="background:#e4f5ee;color:#418b70">RARE 30%</span><p class="smalltext muted">稀有卡</p></div>
+      <div class="panel" style="background:#fff9fc;box-shadow:none"><span class="rarity-pill" style="background:#fff0c9;color:#a77919">ULTRA RARE 10%</span><p class="smalltext muted">超稀有卡</p></div>
+    </div>
+    <div class="gacha-stage"><div class="gacha-orb" id="gachaOrb">🎀</div><h3 id="gachaPrompt">準備好迎接新收藏了嗎？</h3><p class="smalltext muted" id="gachaSub">每次抽卡消耗 30 星星。抽卡結果依卡池資料產生。</p><button class="btn primary" id="drawBtn">✨ 花費 30 星星抽一張</button><div id="gachaResult"></div></div>
+    <p class="smalltext muted">抽卡機率會在每次抽取時依普通 60%、稀有 30%、超稀有 10% 判定。若所選卡池沒有可用資料，請先匯入資料包或建立收藏；不會憑空生成官方成員資料。</p>
+  </div>
+</section>
+
+<section class="page" id="page-quests">
+  <div class="page-title"><h2>Quest Board 🎯</h2><p>每一個小小進度，都是追星生活的成就。</p></div>
+  <div class="panel"><div id="allTasks"></div></div>
+  <div class="panel" style="margin-top:12px"><h3>圖鑑里程碑</h3><div id="milestones"></div></div>
+</section>
+
+<section class="page" id="page-cards">
+  <div class="page-title"><h2>Card Album 🃏</h2><p>收藏你抽到的卡片，打造專屬小卡冊。</p></div>
+  <div class="collection-summary"><div><span>已收藏卡片種類</span><br><strong id="cardCount">0</strong></div><div style="text-align:right"><span>總卡片數</span><br><strong id="cardCopies">0</strong></div></div>
+  <div class="category-tabs"><button class="tab active" data-rarity="all">全部</button><button class="tab" data-rarity="普通">普通</button><button class="tab" data-rarity="稀有">稀有</button><button class="tab" data-rarity="超稀有">超稀有</button></div>
+  <div id="cardAlbum" class="cards-grid"></div>
+</section>
+
+<section class="page" id="page-achievements">
+  <div class="page-title"><h2>Achievements 🏆</h2><p>把每一個小目標都變成紀念。</p></div>
+  <div class="panel" id="achievementList"></div>
+</section>
+
+<section class="page" id="page-diary">
+  <div class="page-title"><h2>My Diary 💌</h2><p>今天的心情，也值得被好好收藏。</p></div>
+  <div class="toolbar"><button class="btn primary" data-action="add-diary">＋ 寫一篇日記</button><button class="btn" data-go="calendar">📅 粉絲行事曆</button></div>
+  <div id="diaryList"></div>
+</section>
+
+<section class="page" id="page-calendar">
+  <div class="page-title"><h2>Fan Calendar 📅</h2><p>生日、回歸、演唱會和重要的日子。</p></div>
+  <div class="toolbar"><button class="btn primary" data-action="add-event">＋ 新增活動</button></div>
+  <div class="panel" id="calendarList"></div>
+</section>
+
+<section class="page" id="page-my">
+  <div class="page-title"><h2>My Universe 🌷</h2><p>你的追星宇宙，由你定義。</p></div>
+  <div class="profile-card"><div class="avatar" id="profileAvatar">🎧</div><h2 id="profileName">My Fan World</h2><p id="profileBio" class="smalltext muted">收藏喜歡的事物，記錄每一個心動時刻。</p><p><span class="pill" id="profileCompany">尚未選擇公司</span> <span class="pill" id="profileLevel">Lv. 1</span></p><button class="btn" data-action="edit-profile">✏️ 編輯個人檔案</button> <button class="btn soft" data-action="share-profile">📸 產生分享卡</button></div>
+  <div class="grid" style="margin-top:13px">
+    <div class="panel"><h3>我的房間 🪴</h3><p class="smalltext muted">用星星解鎖裝飾，打造自己的小角落。</p><button class="btn" data-go="room">進入房間 →</button></div>
+    <div class="panel"><h3>卡片收藏 🃏</h3><p class="smalltext muted">查看已抽到的卡片與稀有度。</p><button class="btn" data-go="cards">打開卡冊 →</button></div>
+    <div class="panel"><h3>成就中心 🏆</h3><p class="smalltext muted">查看收藏里程碑與獎勵。</p><button class="btn" data-go="achievements">查看成就 →</button></div>
+  </div>
+  <div class="panel" style="margin-top:12px"><h3>資料管理與設定 ⚙️</h3><p class="smalltext muted">資料儲存在這個瀏覽器。建議定期匯出備份；不同裝置不會自動同步。</p><div class="toolbar"><button class="btn" data-action="export">⬇️ 匯出 JSON</button><button class="btn" data-action="import">⬆️ 匯入 JSON</button><button class="btn ghost" data-action="reset">重設資料</button><input type="file" id="importFile" accept="application/json,.json" class="hidden"></div></div>
+</section>
+
+<section class="page" id="page-room">
+  <div class="page-title"><h2>My Room 🪴</h2><p>用收藏與小裝飾，打造專屬粉絲房間。</p></div>
+  <div class="room-stage"><div style="position:relative;z-index:1;text-align:center"><div style="font-size:42px">🪟</div><h3 id="roomGreeting">Welcome to my fan room!</h3><p class="smalltext muted">a little space full of love ✦</p></div><div class="room-shelf" id="roomDecor"></div></div>
+  <div class="section-head"><div><h2>裝飾小舖</h2><p>使用星星解鎖裝飾（每件 40 星星）</p></div><span class="pill">⭐ <b id="roomCoins">120</b></span></div>
+  <div class="grid" id="decorShop"></div>
+</section>
+</main>
+</div>
+
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><div class="modal-head"><h2 id="modalTitle">編輯</h2><button class="close" data-action="close-modal" aria-label="關閉">×</button></div><div id="modalBody"></div></div></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(() => {
+'use strict';
+const STORE='kpopUniverse_v11';
+const categories=[
+ ['全部','✨'],['經紀公司','🏢'],['團體','🎤'],['成員','🌷'],['歌曲','🎵'],['專輯','💿'],['小卡','🃏'],['舞台','🎬'],['演唱會','🎟️']
+];
+const demoPacks=[
+ {id:'pack-jyp',company:'JYP Entertainment',name:'JYP 入門示範包',emoji:'🎧',desc:'原創示範資料，用來體驗圖鑑流程',items:[
+  {category:'經紀公司',name:'JYP Entertainment',company:'JYP Entertainment',note:'示範資料'},
+  {category:'團體',name:'TWICE（示範收藏）',company:'JYP Entertainment',note:'示範資料，請自行確認與編輯'},
+  {category:'團體',name:'Stray Kids（示範收藏）',company:'JYP Entertainment',note:'示範資料，請自行確認與編輯'},
+  {category:'歌曲',name:'Fan Song Demo',company:'JYP Entertainment',group:'TWICE（示範收藏）',note:'原創示範歌曲名稱'},
+  {category:'專輯',name:'Universe Album Demo',company:'JYP Entertainment',group:'Stray Kids（示範收藏）',note:'原創示範專輯名稱'}]},
+ {id:'pack-sm',company:'SM Entertainment',name:'SM 入門示範包',emoji:'💎',desc:'原創示範資料，用來體驗圖鑑流程',items:[
+  {category:'經紀公司',name:'SM Entertainment',company:'SM Entertainment',note:'示範資料'},
+  {category:'團體',name:'aespa（示範收藏）',company:'SM Entertainment',note:'示範資料，請自行確認與編輯'},
+  {category:'團體',name:'RIIZE（示範收藏）',company:'SM Entertainment',note:'示範資料，請自行確認與編輯'},
+  {category:'歌曲',name:'Dream Light Demo',company:'SM Entertainment',group:'aespa（示範收藏）',note:'原創示範歌曲名稱'}]},
+ {id:'pack-yg',company:'YG Entertainment',name:'YG 入門示範包',emoji:'🖤',desc:'原創示範資料，用來體驗圖鑑流程',items:[
+  {category:'經紀公司',name:'YG Entertainment',company:'YG Entertainment',note:'示範資料'},
+  {category:'團體',name:'BLACKPINK（示範收藏）',company:'YG Entertainment',note:'示範資料，請自行確認與編輯'},
+  {category:'歌曲',name:'Pink Universe Demo',company:'YG Entertainment',group:'BLACKPINK（示範收藏）',note:'原創示範歌曲名稱'}]},
+ {id:'pack-hybe',company:'HYBE Labels',name:'HYBE 入門示範包',emoji:'💜',desc:'原創示範資料，用來體驗圖鑑流程',items:[
+  {category:'經紀公司',name:'HYBE Labels',company:'HYBE Labels',note:'示範資料'},
+  {category:'團體',name:'SEVENTEEN（示範收藏）',company:'HYBE Labels',note:'示範資料，請自行確認與編輯'},
+  {category:'團體',name:'TXT（示範收藏）',company:'HYBE Labels',note:'示範資料，請自行確認與編輯'},
+  {category:'歌曲',name:'Starry Night Demo',company:'HYBE Labels',group:'TXT（示範收藏）',note:'原創示範歌曲名稱'}]}
+];
+const demoCards=[
+ {id:'demo-card-1',name:'Starlight Rookie',company:'JYP Entertainment',group:'TWICE（示範收藏）',rarity:'普通',emoji:'🌸',owned:0,demo:true},
+ {id:'demo-card-2',name:'Dreamy Melody',company:'JYP Entertainment',group:'Stray Kids（示範收藏）',rarity:'稀有',emoji:'🎧',owned:0,demo:true},
+ {id:'demo-card-3',name:'Moonlight Special',company:'SM Entertainment',group:'aespa（示範收藏）',rarity:'超稀有',emoji:'🌙',owned:0,demo:true},
+ {id:'demo-card-4',name:'Pink Universe',company:'YG Entertainment',group:'BLACKPINK（示範收藏）',rarity:'稀有',emoji:'💗',owned:0,demo:true},
+ {id:'demo-card-5',name:'Lavender Stage',company:'HYBE Labels',group:'SEVENTEEN（示範收藏）',rarity:'普通',emoji:'🎤',owned:0,demo:true},
+ {id:'demo-card-6',name:'Purple Orbit',company:'HYBE Labels',group:'TXT（示範收藏）',rarity:'超稀有',emoji:'💜',owned:0,demo:true}
+];
+const taskDefs=[
+ {id:'task-first',title:'建立第一筆收藏',desc:'把喜歡的事物放進圖鑑',reward:20,exp:10,type:'collection',icon:'🗂️'},
+ {id:'task-diary',title:'寫下今日心情',desc:'在粉絲日記留下一點紀錄',reward:20,exp:10,type:'diary',icon:'💌'},
+ {id:'task-card',title:'抽取一張收藏卡',desc:'去抽卡站試試手氣',reward:20,exp:10,type:'card',icon:'✨'}
+];
+const achievementsDefs=[
+ {id:'ach-collection-1',title:'第一份心動',desc:'建立第一筆有效收藏',goal:1,type:'collection',reward:20,icon:'🌱'},
+ {id:'ach-collection-10',title:'收藏新手村畢業',desc:'累積 10 筆有效收藏',goal:10,type:'collection',reward:40,icon:'🗂️'},
+ {id:'ach-card-1',title:'第一次抽卡',desc:'獲得第一張收藏卡',goal:1,type:'card',reward:20,icon:'🃏'},
+ {id:'ach-diary-3',title:'心情收藏家',desc:'寫下 3 篇粉絲日記',goal:3,type:'diary',reward:30,icon:'💌'},
+ {id:'ach-quest-3',title:'任務小達人',desc:'領取 3 次任務獎勵',goal:3,type:'quest',reward:30,icon:'🏆'}
+];
+const decorItems=[{id:'decor-star',name:'星星燈串',emoji:'✨'},{id:'decor-cd',name:'夢幻 CD',emoji:'💿'},{id:'decor-bear',name:'應援小熊',emoji:'🧸'},{id:'decor-flower',name:'粉色花束',emoji:'🌷'},{id:'decor-ticket',name:'演唱會票根',emoji:'🎟️'},{id:'decor-cloud',name:'雲朵抱枕',emoji:'☁️'}];
+let activeCategory='全部', cardRarityFilter='all', editingCollectionId=null, editingDiaryId=null, editingEventId=null, toastTimer;
+function freshState(){return {version:11,profile:{name:'My Fan World',bio:'收藏喜歡的事物，記錄每一個心動時刻。',company:'',group:'',avatar:'🎧'},coins:120,exp:0,level:1,collections:[],cards:demoCards.map(c=>({...c})),tasks:{},diaries:[],events:[],achievements:{},decor:[],theme:'default',starter:{claimed:false,choice:'',slotsUsed:0,rewardClaimed:false},updates:['歡迎來到 K-POP UNIVERSE！選擇新手福利，開始你的收藏旅程。'],lastDailyDate:new Date().toLocaleDateString('en-CA')};}
+let state=loadState();
+function loadState(){try{const s=JSON.parse(localStorage.getItem(STORE));if(s&&s.version===11)return s;}catch(e){}return freshState();}
+function save(){try{localStorage.setItem(STORE,JSON.stringify(state));}catch(e){toast('儲存空間不足，請匯出備份並減少資料量。');}renderAll();}
+function escapeHTML(v=''){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function uid(prefix='id'){return prefix+'-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,7);}
+function toast(msg){const el=document.getElementById('toast');el.textContent=msg;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2600);}
+function addUpdate(msg){state.updates.unshift(msg);state.updates=state.updates.slice(0,5);}
+function expToNext(level){return 100+(Math.max(1,level)-1)*50;}
+function addExp(n){state.exp+=n;while(state.exp>=expToNext(state.level)){state.exp-=expToNext(state.level);state.level++;addUpdate('恭喜升級！現在是 Lv. '+state.level+' ✨');toast('升級啦！Lv. '+state.level+' ✨');}}
+function validCollectionCount(){return state.collections.length;}
+function ownedCardCount(){return state.cards.reduce((n,c)=>n+(c.owned||0),0);}
+function uniqueOwnedCards(){return state.cards.filter(c=>(c.owned||0)>0).length;}
+function companyList(){return [...new Set([...demoPacks.map(p=>p.company),...state.collections.map(c=>c.company).filter(Boolean),...state.cards.map(c=>c.company).filter(Boolean)])];}
+function safeCategory(c){return categories.some(x=>x[0]===c)?c:'其他';}
+function setPage(page){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id==='page-'+page));document.querySelectorAll('.nav-btn').forEach(b=>b.classList.toggle('active',b.dataset.page===page || (page==='quests'&&false) || (page==='cards'||page==='achievements'||page==='room'||page==='calendar')&&b.dataset.page==='my'));window.scrollTo({top:0,behavior:'smooth'});}
+function modal(title,body){document.getElementById('modalTitle').textContent=title;document.getElementById('modalBody').innerHTML=body;document.getElementById('modalBackdrop').classList.add('open');}
+function closeModal(){document.getElementById('modalBackdrop').classList.remove('open');}
+function formField(label,name,value='',placeholder='',type='text',extra=''){return `<div class="field-wrap ${extra}"><label class="form-label" for="f-${name}">${label}</label><input class="field" id="f-${name}" name="${name}" type="${type}" value="${escapeHTML(value)}" placeholder="${escapeHTML(placeholder)}"></div>`;}
+function selectField(label,name,opts,value='',extra=''){return `<div class="field-wrap ${extra}"><label class="form-label" for="f-${name}">${label}</label><select class="field" id="f-${name}" name="${name}">${opts.map(o=>`<option value="${escapeHTML(o)}" ${o===value?'selected':''}>${escapeHTML(o||'全部')}</option>`).join('')}</select></div>`;}
+function openCollectionForm(item=null){editingCollectionId=item?.id||null;const cats=categories.slice(1).map(c=>c[0]);modal(item?'編輯收藏':'自訂新增收藏',`<form id="collectionForm"><div class="form-grid">
+${selectField('收藏分類','category',cats,item?.category||'團體')}
+${formField('名稱（必填）','name',item?.name||'','例如：最喜歡的歌曲')}
+${selectField('經紀公司','company',['',...companyList()],item?.company||'')}
+${formField('關聯團體／成員','group',item?.group||'','可選填')}
+${formField('日期','date',item?.date||'','', 'date')}
+${formField('備註','note',item?.note||'','可選填','text','full')}
+</div><p class="smalltext muted">有效收藏需有名稱；同分類、同名稱、同公司的紀錄不會重複計數。</p><div class="form-actions"><button type="button" class="btn ghost" data-action="close-modal">取消</button><button class="btn primary" type="submit">保存收藏</button></div></form>`);
+document.getElementById('collectionForm').addEventListener('submit',e=>{e.preventDefault();const fd=new FormData(e.target);const obj=Object.fromEntries(fd.entries());obj.category=safeCategory(obj.category);obj.name=obj.name.trim();if(!obj.name){toast('請填寫收藏名稱');return;}const duplicate=state.collections.some(c=>c.id!==editingCollectionId&&c.category===obj.category&&c.name.toLowerCase()===obj.name.toLowerCase()&&(c.company||'')===(obj.company||''));if(duplicate){toast('這筆收藏已存在，沒有重複計算。');return;}if(editingCollectionId){const i=state.collections.findIndex(c=>c.id===editingCollectionId);if(i>=0)state.collections[i]={...state.collections[i],...obj,updatedAt:new Date().toISOString()};addUpdate('已更新收藏：'+obj.name);toast('收藏已更新！');}else{state.collections.push({...obj,id:uid('col'),createdAt:new Date().toISOString(),source:'custom'});if(!state.starter.claimed&&state.starter.slotsUsed<5)state.starter.slotsUsed++;addUpdate('新增收藏：'+obj.name);toast('收藏已加入圖鑑！');}closeModal();save();checkTaskProgress();});
+}
+function openPackModal(){const packs=demoPacks;modal('選擇內建資料包 🎁',`<p class="smalltext muted">資料包提供可編輯的示範收藏，快速開始圖鑑體驗。示範名稱不代表官方資料。</p><div class="pack-grid">${packs.map(p=>`<button class="pack" data-pack="${p.id}"><div class="pack-emoji">${p.emoji}</div><strong>${escapeHTML(p.name)}</strong><small>${p.items.length} 筆示範資料 · ${escapeHTML(p.company)}</small></button>`).join('')}</div><div class="notice">匯入資料包會將尚未存在的項目加入圖鑑。重複資料會略過；這不會自動領取新手福利。</div><div class="form-actions"><button class="btn ghost" data-action="close-modal">先不要</button></div>`);}
+function importPack(id){const pack=demoPacks.find(p=>p.id===id);if(!pack)return;let added=0;pack.items.forEach(item=>{const exists=state.collections.some(c=>c.category===item.category&&c.name.toLowerCase()===item.name.toLowerCase()&&(c.company||'')===(item.company||''));if(!exists){state.collections.push({...item,id:uid('col'),createdAt:new Date().toISOString(),source:'demo-pack',packId:id});added++;}});state.profile.company=pack.company;state.starter.choice=pack.company;addUpdate('套用資料包：'+pack.name+'（新增 '+added+' 筆）');closeModal();save();checkTaskProgress();toast(`資料包已套用，新增 ${added} 筆收藏！`);}
+function openStarter(){const company=state.profile.company;modal('選擇你的新手福利 🎁',`<p>選擇你想開始的收藏方向，再領取一份免費新手禮。這不會限制你之後收藏其他團體。</p><div class="pack-grid">${demoPacks.map(p=>`<button class="pack ${state.starter.choice===p.company?'selected':''}" data-starter="${escapeHTML(p.company)}"><div class="pack-emoji">${p.emoji}</div><strong>${escapeHTML(p.company)}</strong><small>${escapeHTML(p.name)}</small></button>`).join('')}</div><div class="notice">新手福利包含：🎁 5 個免費收集名額、⭐ 60 星星、✨ 30 EXP、💝 新手紀念卡框。福利只可領取一次；之後仍可自由新增收藏。</div><div class="form-actions"><button class="btn ghost" data-action="close-modal">稍後再說</button><button class="btn primary" id="claimStarter" ${state.starter.claimed?'disabled':''}>${state.starter.claimed?'已領取新手福利':'確認選擇並領取'}</button></div><p class="smalltext muted">${state.starter.claimed?'你已領取新手福利，可以繼續收藏其他團體。':'先選擇一個公司主題，再領取福利。'}</p>`);
+document.getElementById('claimStarter')?.addEventListener('click',()=>{if(state.starter.claimed){toast('新手福利已領取過囉！');return;}if(!state.starter.choice){toast('請先選擇一個經紀公司主題');return;}state.starter.claimed=true;state.starter.rewardClaimed=true;state.coins+=60;addExp(30);const welcomeCard={id:uid('card'),name:'My First Heart',company:state.starter.choice,group:'新手福利',rarity:'稀有',emoji:'💝',owned:1,demo:true,source:'starter'};state.cards.push(welcomeCard);addUpdate('領取新手福利：60 星星、30 EXP 與紀念卡！');closeModal();save();toast('新手福利領取成功！🎁');});}
+function openDiaryForm(d=null){editingDiaryId=d?.id||null;modal(d?'編輯日記':'寫一篇粉絲日記 💌',`<form id="diaryForm"><div class="form-grid">${formField('標題（必填）','title',d?.title||'','今天最開心的事')}${formField('日期','date',d?.date||new Date().toLocaleDateString('en-CA'),'','date')}${selectField('今天的心情','mood',['🥰 心動','✨ 興奮','🌷 平靜','🥹 感動','😴 疲累','💜 想念'],d?.mood||'🥰 心動')}${formField('關聯團體／活動（選填）','related',d?.related||'','例如：演唱會')}${`<div class="field-wrap full"><label class="form-label" for="f-content">日記內容</label><textarea class="field" id="f-content" name="content" rows="5" placeholder="今天有什麼想記住的時刻？">${escapeHTML(d?.content||'')}</textarea></div>`}</div><div class="form-actions"><button type="button" class="btn ghost" data-action="close-modal">取消</button><button class="btn primary">保存日記</button></div></form>`);
+document.getElementById('diaryForm').addEventListener('submit',e=>{e.preventDefault();const o=Object.fromEntries(new FormData(e.target).entries());if(!o.title.trim()||!o.content.trim()){toast('請填寫標題與日記內容');return;}if(editingDiaryId){const i=state.diaries.findIndex(x=>x.id===editingDiaryId);if(i>=0)state.diaries[i]={...state.diaries[i],...o};toast('日記已更新！');}else{state.diaries.unshift({...o,id:uid('diary'),createdAt:new Date().toISOString()});addUpdate('寫下了一篇新的粉絲日記 💌');toast('日記已保存！');}closeModal();save();checkTaskProgress();});}
+function openEventForm(ev=null){editingEventId=ev?.id||null;modal(ev?'編輯活動':'新增粉絲行事曆活動 📅',`<form id="eventForm"><div class="form-grid">${formField('活動名稱（必填）','title',ev?.title||'','例如：演唱會')}${formField('日期','date',ev?.date||new Date().toLocaleDateString('en-CA'),'','date')}${selectField('活動類型','type',['演唱會','回歸','生日','粉絲活動','個人紀念日','其他'],ev?.type||'演唱會')}${formField('備註','note',ev?.note||'','可選填','text','full')}</div><div class="form-actions"><button type="button" class="btn ghost" data-action="close-modal">取消</button><button class="btn primary">保存活動</button></div></form>`);
+document.getElementById('eventForm').addEventListener('submit',e=>{e.preventDefault();const o=Object.fromEntries(new FormData(e.target).entries());if(!o.title.trim()||!o.date){toast('請填寫活動名稱與日期');return;}if(editingEventId){const i=state.events.findIndex(x=>x.id===editingEventId);if(i>=0)state.events[i]={...state.events[i],...o};}else state.events.push({...o,id:uid('event')});closeModal();save();toast('活動已保存！');});}
+function editProfile(){modal('編輯個人檔案 🌷',`<form id="profileForm"><div class="form-grid">${formField('暱稱','name',state.profile.name,'My Fan World')}${formField('代表團體','group',state.profile.group,'可自由填寫')}${selectField('主要經紀公司','company',['',...companyList()],state.profile.company)}${selectField('頭像符號','avatar',['🎧','🌷','🐰','🧸','💜','🩷','🎤','⭐'],state.profile.avatar)}<div class="field-wrap full"><label class="form-label" for="f-bio">個人簡介</label><textarea class="field" id="f-bio" name="bio" rows="3">${escapeHTML(state.profile.bio)}</textarea></div></div><div class="form-actions"><button type="button" class="btn ghost" data-action="close-modal">取消</button><button class="btn primary">保存檔案</button></div></form>`);
+document.getElementById('profileForm').addEventListener('submit',e=>{e.preventDefault();state.profile={...state.profile,...Object.fromEntries(new FormData(e.target).entries())};closeModal();save();toast('個人檔案已更新！');});}
+function deleteCollection(id){const c=state.collections.find(x=>x.id===id);if(!c)return;if(!confirm(`確定刪除「${c.name}」？已領取的獎勵不會重新開放。`))return;state.collections=state.collections.filter(x=>x.id!==id);save();toast('收藏已刪除');}
+function deleteDiary(id){if(!confirm('確定刪除這篇日記嗎？'))return;state.diaries=state.diaries.filter(x=>x.id!==id);save();toast('日記已刪除');}
+function deleteEvent(id){if(!confirm('確定刪除這個活動嗎？'))return;state.events=state.events.filter(x=>x.id!==id);save();toast('活動已刪除');}
+function checkTaskProgress(){const today=new Date().toLocaleDateString('en-CA');if(state.lastDailyDate!==today){state.tasks={};state.lastDailyDate=today;}const conditions={collection:state.collections.length>0,diary:state.diaries.some(d=>d.date===today),card:state.cards.some(c=>(c.owned||0)>0)};taskDefs.forEach(t=>{const k=t.id+'-'+today;if(!state.tasks[k])state.tasks[k]={done:false,claimed:false};if(conditions[t.type])state.tasks[k].done=true;});save();}
+function claimTask(id){const t=taskDefs.find(x=>x.id===id);if(!t)return;const today=new Date().toLocaleDateString('en-CA');const k=t.id+'-'+today;state.tasks[k]=state.tasks[k]||{done:false,claimed:false};const conditions={collection:state.collections.length>0,diary:state.diaries.some(d=>d.date===today),card:state.cards.some(c=>(c.owned||0)>0)};if(conditions[t.type])state.tasks[k].done=true;if(!state.tasks[k].done){toast('先完成任務條件，就可以領獎勵囉！');return;}if(state.tasks[k].claimed){toast('這個任務獎勵已領取');return;}state.tasks[k].claimed=true;state.coins+=t.reward;addExp(t.exp);addUpdate(`完成任務：${t.title}，獲得 ${t.reward} 星星與 ${t.exp} EXP。`);save();toast(`獲得 ${t.reward} 星星 + ${t.exp} EXP！`);checkAchievements();}
+function checkAchievements(){const progress={collection:state.collections.length,card:ownedCardCount(),diary:state.diaries.length,quest:Object.values(state.tasks).filter(t=>t.claimed).length};achievementsDefs.forEach(a=>{const p=progress[a.type]||0;if(p>=a.goal&&!state.achievements[a.id]){state.achievements[a.id]={unlocked:true,claimed:false};addUpdate('解鎖成就：'+a.title+' 🏆');}});save();}
+function claimAchievement(id){const a=achievementsDefs.find(x=>x.id===id),s=state.achievements[id];if(!a||!s?.unlocked||s.claimed)return;state.achievements[id].claimed=true;state.coins+=a.reward;addUpdate(`領取成就「${a.title}」獎勵 ${a.reward} 星星。`);save();toast('成就獎勵已領取！⭐');}
+function drawCard(){if(state.coins<30){toast('星星不足！完成任務就能獲得更多星星。');return;}const company=document.getElementById('gachaCompany').value||state.profile.company;const pool=state.cards.filter(c=>c.company===company);if(!pool.length){toast('這個卡池目前沒有資料，請先選擇資料包或建立收藏。');return;}state.coins-=30;const roll=Math.random()*100;const rarity=roll<60?'普通':roll<90?'稀有':'超稀有';let candidates=pool.filter(c=>c.rarity===rarity);if(!candidates.length)candidates=pool;const template=candidates[Math.floor(Math.random()*candidates.length)];const card={...template,rarity,id:template.id+'-'+rarity.toLowerCase()};const idx=state.cards.findIndex(c=>c.id===card.id);let repeated=false;if(idx>=0){if((state.cards[idx].owned||0)>0){repeated=true;state.cards[idx].owned++;state.coins+=10;}else state.cards[idx].owned=1;}else state.cards.push({...card,owned:1});const orb=document.getElementById('gachaOrb');orb.classList.remove('spin');void orb.offsetWidth;orb.classList.add('spin');document.getElementById('gachaPrompt').textContent='開卡中… ✨';document.getElementById('gachaResult').innerHTML='';document.getElementById('drawBtn').disabled=true;setTimeout(()=>{document.getElementById('gachaPrompt').textContent=repeated?'抽到重複卡！':'恭喜獲得新收藏！';document.getElementById('gachaSub').textContent=repeated?'重複卡已保留一份，並返還 10 星星。':'卡片已加入你的收藏卡冊。';document.getElementById('gachaResult').innerHTML=`<div class="gacha-result"><div class="collect-art ${card.rarity==='超稀有'?'yellow':card.rarity==='稀有'?'mint':''}"><span class="tag">${escapeHTML(card.company)}</span><div class="art-emoji">${card.emoji||'🃏'}</div><span class="rarity">${card.rarity==='超稀有'?'✦ ULTRA RARE':card.rarity==='稀有'?'✦ RARE':'COMMON'}</span></div><h3>${escapeHTML(card.name)}</h3><p class="smalltext muted">${escapeHTML(card.group||'自訂收藏')} · ${card.rarity}</p></div>`;document.getElementById('drawBtn').disabled=false;addExp(5);addUpdate(`抽卡獲得「${card.name}」${card.rarity}卡${repeated?'（重複卡）':''}。`);save();checkAchievements();},700);}
+function artClass(c){return c.category==='歌曲'||c.category==='舞台'?'blue':c.category==='成員'||c.category==='小卡'?'mint':c.category==='演唱會'||c.category==='專輯'?'yellow':'';}
+function categoryEmoji(c){return ({'經紀公司':'🏢','團體':'🎤','成員':'🌷','歌曲':'🎵','專輯':'💿','小卡':'🃏','舞台':'🎬','演唱會':'🎟️'})[c]||'✨';}
+function renderCollection(){document.getElementById('categoryTabs').innerHTML=categories.map(([name,emoji])=>`<button class="tab ${activeCategory===name?'active':''}" data-category="${name}">${emoji} ${name}</button>`).join('');const list=state.collections.filter(c=>(activeCategory==='全部'||c.category===activeCategory)&&(!document.getElementById('collectionSearch').value||[c.name,c.company,c.group,c.note].join(' ').toLowerCase().includes(document.getElementById('collectionSearch').value.toLowerCase()))&&(!document.getElementById('companyFilter').value||c.company===document.getElementById('companyFilter').value));document.getElementById('collectionCount').textContent=state.collections.length;document.getElementById('slotsLeft').textContent=Math.max(0,5-state.starter.slotsUsed);document.getElementById('collectionProgressBar').style.width=Math.min(100,state.collections.length*10)+'%';document.getElementById('companyFilter').innerHTML='<option value="">所有經紀公司</option>'+companyList().map(c=>`<option ${document.getElementById('companyFilter').value===c?'selected':''}>${escapeHTML(c)}</option>`).join('');document.getElementById('collectionCards').innerHTML=list.length?list.map(c=>`<article class="collect-card"><div class="collect-art ${artClass(c)}"><span class="tag">${escapeHTML(c.category)}${c.source==='demo-pack'?' · 示範':''}</span><div class="art-emoji">${categoryEmoji(c.category)}</div><span class="rarity">${escapeHTML((c.company||'MY COLLECTION').toUpperCase())}</span></div><div class="collect-info"><h3>${escapeHTML(c.name)}</h3><p>${escapeHTML(c.group||c.company||c.note||'我的收藏')}</p><div class="card-actions"><button data-edit-collection="${c.id}">編輯</button><button data-delete-collection="${c.id}">刪除</button></div></div></article>`).join(''):`<div class="empty"><div style="font-size:35px">🗂️</div><b>${state.collections.length?'沒有符合的收藏':'你的圖鑑正在等待第一份收藏！'}</b><p class="smalltext">選擇內建資料包快速開始，或自訂新增你最喜歡的事物。</p><button class="btn primary" data-action="open-pack">選擇資料包</button> <button class="btn" data-action="add-item">自訂新增</button></div>`;}
+function renderTasks(){const today=new Date().toLocaleDateString('en-CA');document.getElementById('homeTasks').innerHTML=taskDefs.map(t=>{const s=state.tasks[t.id+'-'+today]||{done:false,claimed:false};return `<div class="task-row"><div class="task-icon">${t.icon}</div><div class="task-info"><strong>${t.title}</strong><small>${t.desc} · ${t.reward} ⭐ + ${t.exp} EXP</small></div>${s.claimed?'<span class="rarity-pill">已領取</span>':`<button class="btn small ${s.done?'primary':'ghost'}" data-claim-task="${t.id}">${s.done?'領取':'前往'}</button>`}</div>`;}).join('');document.getElementById('allTasks').innerHTML=taskDefs.map(t=>{const s=state.tasks[t.id+'-'+today]||{done:false,claimed:false};return `<div class="task-row"><div class="task-icon">${t.icon}</div><div class="task-info"><strong>${t.title}</strong><small>${t.desc} · 獎勵 ${t.reward} 星星、${t.exp} EXP</small><div class="progress"><span style="width:${s.done?100:0}%"></span></div></div>${s.claimed?'<span class="rarity-pill">已領取</span>':`<button class="btn small ${s.done?'primary':'ghost'}" data-claim-task="${t.id}">${s.done?'領取獎勵':'尚未完成'}</button>`}</div>`;}).join('');document.getElementById('milestones').innerHTML=[5,10,20,50].map((n,i)=>{const got=state.collections.length>=n;return `<div class="list-row"><div class="task-icon">${['🌱','🌷','🌟','👑'][i]}</div><div class="grow"><strong>收藏達到 ${n} 筆</strong><small>${got?'已達成里程碑':'目前 '+state.collections.length+' / '+n+' 筆'}</small></div><span class="rarity-pill">${got?'已達成':'未完成'}</span></div>`;}).join('');}
+function renderHome(){document.getElementById('homeCoins').textContent=state.coins;document.getElementById('homeCards').textContent=ownedCardCount();document.getElementById('homeAchievements').textContent=Object.values(state.achievements).filter(a=>a.unlocked).length;document.getElementById('topCoins').textContent=state.coins;document.getElementById('topLevel').textContent=state.level;document.getElementById('homeProgress').innerHTML=`<div class="list-row"><div class="task-icon">🗂️</div><div class="grow"><strong>收藏圖鑑</strong><small>${state.collections.length} 筆有效收藏</small><div class="progress"><span style="width:${Math.min(100,state.collections.length*10)}%"></span></div></div></div><div class="list-row"><div class="task-icon">🃏</div><div class="grow"><strong>收藏卡冊</strong><small>${uniqueOwnedCards()} 種卡片 · ${ownedCardCount()} 張</small><div class="progress"><span style="width:${Math.min(100,uniqueOwnedCards()*10)}%"></span></div></div></div><div class="list-row"><div class="task-icon">✨</div><div class="grow"><strong>等級 ${state.level}</strong><small>${state.exp} / ${expToNext(state.level)} EXP</small><div class="progress"><span style="width:${state.exp/expToNext(state.level)*100}%"></span></div></div></div>`;document.getElementById('homeUpdates').innerHTML=state.updates.length?state.updates.map(u=>`<div style="padding:8px 0;border-bottom:1px solid var(--line)">✦ ${escapeHTML(u)}</div>`).join(''):'完成第一筆收藏，開始你的追星旅程！';}
+function renderGacha(){const sel=document.getElementById('gachaCompany');const old=sel.value||state.profile.company;sel.innerHTML=companyList().map(c=>`<option value="${escapeHTML(c)}">${escapeHTML(c)}</option>`).join('');if(companyList().includes(old))sel.value=old;const c=sel.value;document.getElementById('gachaCompanyTitle').textContent='🌟 '+(c||'同公司主題')+' 抽卡池';document.getElementById('gachaCompanyDesc').textContent='卡池只會使用此公司已存在的卡片資料。';document.getElementById('drawBtn').disabled=false;}
+function renderCardAlbum(){const cards=state.cards.filter(c=>(c.owned||0)>0&&(cardRarityFilter==='all'||c.rarity===cardRarityFilter));document.getElementById('cardCount').textContent=uniqueOwnedCards();document.getElementById('cardCopies').textContent=ownedCardCount();document.getElementById('cardAlbum').innerHTML=cards.length?cards.map(c=>`<article class="collect-card"><div class="collect-art ${c.rarity==='超稀有'?'yellow':c.rarity==='稀有'?'mint':''}"><span class="tag">${escapeHTML(c.company)}</span><div class="art-emoji">${c.emoji||'🃏'}</div><span class="rarity">${c.rarity==='超稀有'?'✦ ULTRA RARE':c.rarity==='稀有'?'✦ RARE':'COMMON'}</span></div><div class="collect-info"><h3>${escapeHTML(c.name)}</h3><p>${escapeHTML(c.group||'個人收藏')} · x${c.owned}</p><span class="rarity-pill">${c.rarity}</span></div></article>`).join(''):'<div class="empty"><div style="font-size:35px">🃏</div><b>卡冊還在等待第一張卡</b><p class="smalltext">前往抽卡站，收集你的第一份小卡。</p><button class="btn primary" data-go="gacha">去抽卡</button></div>';}
+function renderAchievements(){document.getElementById('achievementList').innerHTML=achievementsDefs.map(a=>{const s=state.achievements[a.id]||{};const progress=({collection:state.collections.length,card:ownedCardCount(),diary:state.diaries.length,quest:Object.values(state.tasks).filter(t=>t.claimed).length})[a.type]||0;const unlocked=s.unlocked||progress>=a.goal;if(unlocked&&!s.unlocked)state.achievements[a.id]={unlocked:true,claimed:false};return `<div class="task-row"><div class="task-icon">${a.icon}</div><div class="task-info"><strong>${a.title} ${unlocked?'✨':''}</strong><small>${a.desc} · 獎勵 ${a.reward} ⭐</small><div class="progress"><span style="width:${Math.min(100,progress/a.goal*100)}%"></span></div></div>${s.claimed?'<span class="rarity-pill">已領取</span>':unlocked?`<button class="btn small primary" data-claim-ach="${a.id}">領取</button>`:`<span class="rarity-pill">${Math.min(progress,a.goal)}/${a.goal}</span>`}</div>`;}).join('');}
+function renderDiary(){const list=state.diaries.slice().sort((a,b)=>(b.date||'').localeCompare(a.date||''));document.getElementById('diaryList').innerHTML=list.length?list.map(d=>`<article class="diary-item"><div class="diary-meta">${escapeHTML(d.date)} · ${escapeHTML(d.mood||'🌷')}</div><h3>${escapeHTML(d.title)}</h3>${d.related?`<div class="diary-meta">關聯：${escapeHTML(d.related)}</div>`:''}<p>${escapeHTML(d.content)}</p><div class="card-actions"><button data-edit-diary="${d.id}">編輯</button><button data-delete-diary="${d.id}">刪除</button></div></article>`).join(''):'<div class="empty"><div style="font-size:35px">💌</div><b>今天有什麼想記住的時刻？</b><p class="smalltext">把心情、舞台和每一次心動都記錄下來。</p><button class="btn primary" data-action="add-diary">寫第一篇日記</button></div>';}
+function renderCalendar(){const list=state.events.slice().sort((a,b)=>a.date.localeCompare(b.date));document.getElementById('calendarList').innerHTML=list.length?list.map(e=>`<div class="list-row"><div class="task-icon">${e.type==='演唱會'?'🎟️':e.type==='生日'?'🎂':e.type==='回歸'?'🎵':'📅'}</div><div class="grow"><strong>${escapeHTML(e.title)}</strong><small>${escapeHTML(e.date)} · ${escapeHTML(e.type)}${e.note?' · '+escapeHTML(e.note):''}</small></div><button class="btn small ghost" data-edit-event="${e.id}">編輯</button><button class="btn small ghost" data-delete-event="${e.id}">刪除</button></div>`).join(''):'<div class="empty"><div style="font-size:35px">📅</div><b>把重要日子放進行事曆吧！</b><p class="smalltext">演唱會、回歸日、生日與專屬紀念日都可以記錄。</p><button class="btn primary" data-action="add-event">新增活動</button></div>';}
+function renderRoom(){document.getElementById('roomGreeting').textContent=state.profile.name+' 的粉絲房間';document.getElementById('roomCoins').textContent=state.coins;document.getElementById('roomDecor').innerHTML=state.decor.length?state.decor.map(id=>{const d=decorItems.find(x=>x.id===id);return d?`<span class="decor" title="${escapeHTML(d.name)}">${d.emoji}</span>`:'';}).join(''):'<span class="smalltext muted">這裡還空空的，去小舖解鎖第一個裝飾吧！</span>';document.getElementById('decorShop').innerHTML=decorItems.map(d=>{const owned=state.decor.includes(d.id);return `<div class="panel"><div style="font-size:30px">${d.emoji}</div><h3 style="margin:7px 0">${d.name}</h3><p class="smalltext muted">${owned?'已解鎖':'40 星星'}</p><button class="btn ${owned?'ghost':'primary'} small" data-buy-decor="${d.id}" ${owned?'disabled':''}>${owned?'已擁有':'解鎖裝飾'}</button></div>`;}).join('');}
+function renderProfile(){document.getElementById('profileName').textContent=state.profile.name;document.getElementById('profileBio').textContent=state.profile.bio;document.getElementById('profileAvatar').textContent=state.profile.avatar||'🎧';document.getElementById('profileCompany').textContent=state.profile.company||'尚未選擇公司';document.getElementById('profileLevel').textContent='Lv. '+state.level;}
+function renderAll(){renderHome();renderCollection();renderTasks();renderGacha();renderCardAlbum();renderAchievements();renderDiary();renderCalendar();renderRoom();renderProfile();}
+function exportData(){const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='kpop-universe-backup.json';a.click();URL.revokeObjectURL(url);toast('備份檔已準備下載！');}
+function importDataFile(file){if(!file)return;const reader=new FileReader();reader.onload=()=>{try{const s=JSON.parse(reader.result);if(!s||s.version!==11||!Array.isArray(s.collections)||!Array.isArray(s.cards)||!s.profile)throw new Error('格式不符');if(!confirm('匯入會取代目前這個瀏覽器的 K-POP UNIVERSE 資料，建議先匯出備份。確定繼續嗎？'))return;state=s;save();toast('資料匯入成功！');}catch(e){toast('匯入失敗：檔案格式不正確或版本不相容。');}};reader.readAsText(file);}
+function resetData(){if(!confirm('確定重設所有 K-POP UNIVERSE 資料？建議先匯出 JSON 備份。'))return;state=freshState();save();setPage('home');toast('資料已重設。');}
+function shareProfile(){const content=`K-POP UNIVERSE ✦ MY FAN WORLD\n${state.profile.name}\n${state.profile.bio}\n${state.profile.company||'My Fan Universe'}\n收藏 ${state.collections.length} 筆｜卡片 ${ownedCardCount()} 張｜Lv.${state.level}\nMade with love ✨`;const blob=new Blob([content],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='my-fan-world.txt';a.click();URL.revokeObjectURL(url);toast('已產生個人分享文字檔；圖片分享版型可於後續擴充。');}
+document.addEventListener('click',e=>{
+ const nav=e.target.closest('[data-page]');if(nav){setPage(nav.dataset.page);return;}
+ const go=e.target.closest('[data-go]');if(go){setPage(go.dataset.go);return;}
+ const cat=e.target.closest('[data-category]');if(cat){activeCategory=cat.dataset.category;renderCollection();return;}
+ const rarity=e.target.closest('[data-rarity]');if(rarity){cardRarityFilter=rarity.dataset.rarity;document.querySelectorAll('[data-rarity]').forEach(b=>b.classList.toggle('active',b===rarity));renderCardAlbum();return;}
+ const pack=e.target.closest('[data-pack]');if(pack){importPack(pack.dataset.pack);return;}
+ const starter=e.target.closest('[data-starter]');if(starter){state.starter.choice=starter.dataset.starter;openStarter();return;}
+ const edit=e.target.closest('[data-edit-collection]');if(edit){openCollectionForm(state.collections.find(c=>c.id===edit.dataset.editCollection));return;}
+ const del=e.target.closest('[data-delete-collection]');if(del){deleteCollection(del.dataset.deleteCollection);return;}
+ const ed=e.target.closest('[data-edit-diary]');if(ed){openDiaryForm(state.diaries.find(d=>d.id===ed.dataset.editDiary));return;}
+ const dd=e.target.closest('[data-delete-diary]');if(dd){deleteDiary(dd.dataset.deleteDiary);return;}
+ const ee=e.target.closest('[data-edit-event]');if(ee){openEventForm(state.events.find(d=>d.id===ee.dataset.editEvent));return;}
+ const de=e.target.closest('[data-delete-event]');if(de){deleteEvent(de.dataset.deleteEvent);return;}
+ const claim=e.target.closest('[data-claim-task]');if(claim){claimTask(claim.dataset.claimTask);return;}
+ const ach=e.target.closest('[data-claim-ach]');if(ach){claimAchievement(ach.dataset.claimAch);return;}
+ const buy=e.target.closest('[data-buy-decor]');if(buy){const id=buy.dataset.buyDecor;if(state.decor.includes(id))return;if(state.coins<40){toast('星星不足！完成任務取得更多星星。');return;}state.coins-=40;state.decor.push(id);save();toast('裝飾解鎖成功！');return;}
+ const action=e.target.closest('[data-action]')?.dataset.action;if(!action)return;
+ if(action==='close-modal')closeModal();
+ else if(action==='add-item')openCollectionForm();
+ else if(action==='open-pack')openPackModal();
+ else if(action==='starter')openStarter();
+ else if(action==='add-diary')openDiaryForm();
+ else if(action==='add-event')openEventForm();
+ else if(action==='edit-profile')editProfile();
+ else if(action==='export')exportData();
+ else if(action==='import')document.getElementById('importFile').click();
+ else if(action==='reset')resetData();
+ else if(action==='share-profile')shareProfile();
+});
+document.getElementById('collectionSearch').addEventListener('input',renderCollection);
+document.getElementById('companyFilter').addEventListener('change',renderCollection);
+document.getElementById('gachaCompany').addEventListener('change',()=>{renderGacha();document.getElementById('gachaResult').innerHTML='';document.getElementById('gachaOrb').textContent='🎀';document.getElementById('gachaPrompt').textContent='準備好迎接新收藏了嗎？';});
+document.getElementById('drawBtn').addEventListener('click',drawCard);
+document.getElementById('importFile').addEventListener('change',e=>importDataFile(e.target.files[0]));
+document.getElementById('modalBackdrop').addEventListener('click',e=>{if(e.target.id==='modalBackdrop')closeModal();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+checkTaskProgress();renderAll();
+})();
+</script>
+</body>
+</html>
